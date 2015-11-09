@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="asideApp">
+
+  <head>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://rawgit.com/dbtek/angular-aside/master/dist/css/angular-aside.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://rawgit.com/dbtek/angular-aside/master/dist/js/angular-aside.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+  
+    <div class="jumbotron">
+      <h1>Angular Aside</h1>
+      <p>
+        <button type="button" class="btn btn-default btn-lg" ng-click="openAside('left')">
+          <span class="glyphicon glyphicon-align-justify"></span> Menu
+        </button>
+        <a href="https://github.com/dbtek/angular-aside" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-download"></span> Download</a>
+        <button type="button" class="btn btn-default btn-lg pull-right" ng-click="openAside('right')">
+          Menu <span class="glyphicon glyphicon-align-justify"></span>
+        </button>
+      </p>
+    </div>
+    
+    
+    
+    <script type="text/ng-template" id="aside.html">
+<div class="modal-header">
+    <h3 class="modal-title">ngAside</h3>
+</div>
+<div class="modal-body">
+  Look i'm in aside.
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary">OK</button>
+    <button class="btn btn-warning">Cancel</button>
+</div>
+</script>
+ 
+ 
+ 
+  </body>
+
+</html>
